@@ -1,0 +1,121 @@
+/* 🎨 Root colors and theme */
+:root {
+  --bg: #0842e2;
+  --accent: #7c5cff;
+  --accent2: #00c2ff;
+  --text: #e8f0ff;
+  --muted: #98a0b3;
+  --card-bg: #b6c7f3;
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+/* 🧱 Base layout reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+/* 🔗 Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent2);
+}
+
+/* 📋 General sections */
+section {
+  width: 100%;
+  max-width: 1100px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+}
+
+/* 🧍 Contact Form */
+form {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff20;
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent2);
+  background: #ffffff35;
+}
+
+/* 📤 Button */
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+  font-weight: 600;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Status message */
+#statusMsg {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* 🧭 Remove unwanted gaps */
+.container, .app {
+  padding: 0;
+  margin: 0;
+}
+
+/* 🌐 Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}

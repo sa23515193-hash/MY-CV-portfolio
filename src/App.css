@@ -1,0 +1,285 @@
+/* ✅ GLOBAL STYLE */
+body {
+  margin: 0;
+  padding: 0;
+  background:  #02153d;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 40px 80px;  /* tighter vertical space */
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #72b41b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ✅ HEADER & NAVBAR */
+header {
+  background: linear-gradient(90deg, #0078ff, #00d9ff);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: rgba(255, 88, 88, 0.06);
+  padding: 12px 0;
+  backdrop-filter: blur(5px);
+}
+
+.navbar a {
+  color: #d9eaff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #00d9ff;
+  border-bottom: 2px solid #00d9ff;
+  padding-bottom: 3px;
+}
+
+/* ✅ INTRO SECTION */
+.intro {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.intro h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #00d9ff;
+}
+
+.intro p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #0dd376;
+  color: rgb(10, 9, 9);
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #0077ff;
+  transform: scale(1.05);
+}
+
+/* ✅ OBJECTIVE, EDUCATION, EXPERIENCE */
+.content-box {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 17px;
+  background: rgba(211, 233, 205, 0.527);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(221, 126, 49, 0.1);
+}
+
+/* remove large gaps between sections */
+section + section {
+  margin-top: 15px;
+}
+
+.content-box ul {
+  list-style: square;
+  padding-left: 25px;
+  margin: 10px 0 0 0;
+}
+
+/* ✅ PROJECTS (unchanged colors) */
+.project {
+  background: linear-gradient(#bdc007, #0e0d0c);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #e4a65f;
+}
+
+.project h3 {
+  color: #0a0909;
+  margin-bottom: 8px;
+}
+
+.project p {
+  line-height: 1.7;
+}
+
+.project iframe,
+.project img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+/* ✅ SKILLS & TECHNOLOGIES BORDER */
+.skills-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px 25px;
+  border: 2px solid #f08a16;
+  border-radius: 12px;
+  background: rgba(10, 15, 30, 0.5);
+  box-shadow: 0 0 12px rgba(240, 138, 22, 0.25);
+}
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.skill-logo {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center -260px;
+  text-align: center;
+}
+
+.skill-logo img {
+  width: 55px;
+  height: 55px;
+}
+
+.skill-logo span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+/* ✅ PROFILES */
+.profiles-section {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #1d01011e;
+}
+
+.github {
+  background: #4aa9e0;
+}
+
+.linkedin {
+  background: #d6390a;
+}
+
+.profile-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px #ffffff88;
+}
+
+/* ✅ CONTACT */
+.contact-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #06d9ec, );
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.chat-btn,
+.email-btn {
+  background: #007bff;
+  color: rgb(235, 248, 250);
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.chat-btn:hover,
+.email-btn:hover {
+  background: #0056c9;
+  transform: scale(1.05);
+}
+
+/* ✅ FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #dadfe2;
+  color: #022847;
+  margin-top: 0;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 800px) {
+  section {
+    padding: 35px 25px;
+  }
+
+  .carousel {
+    width: 350px;
+    height: 350px;
+  }
+
+  .skills-container {
+    padding: 25px;
+  }
+}
