@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": " https://sa23515193-hash.github.io/My-CV-portfolio",
+  "homepage": " https://sa23515193-hash.github.io/MY-CV-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
